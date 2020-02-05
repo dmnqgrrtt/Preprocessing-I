@@ -57,3 +57,51 @@ html, body {
     height: 100%;
 }
 
+@teamColor1: #FDB827;
+@teamColor2: #542583;
+
+body {
+	border-top: 20px solid @teamColor1;
+	border-left: 20px solid @teamColor1;
+	border-right: 20px solid @teamColor2;
+	border-bottom: 20px solid @teamColor2;
+	margin: 2%;
+}
+
+header {
+	font-size: 150%;
+	font-weight: 550;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 3%;
+
+	.nav-bar {
+		width: 50%;
+		display: flex;
+		justify-content: space-evenly;
+			
+		a {
+			text-decoration: none;
+			color: @teamColor2;
+			&:hover {
+				color: @teamColor1;
+			} // hover
+			
+			
+		} // anchor
+	} // nav bar
+} // header
+
+.title-font {
+	font-family: FreeMono, monospace;
+	font-weight: bold;
+}
+
+.section-layout {
+	width: 100%;
+	margin: 3% 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+}

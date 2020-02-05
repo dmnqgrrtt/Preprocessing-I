@@ -134,3 +134,41 @@ html,
 body {
   height: 100%;
 }
+body {
+  border-top: 20px solid #FDB827;
+  border-left: 20px solid #FDB827;
+  border-right: 20px solid #542583;
+  border-bottom: 20px solid #542583;
+  margin: 2%;
+}
+header {
+  font-size: 150%;
+  font-weight: 550;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3%;
+}
+header .nav-bar {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header .nav-bar a {
+  text-decoration: none;
+  color: #542583;
+}
+header .nav-bar a:hover {
+  color: #FDB827;
+}
+.title-font {
+  font-family: FreeMono, monospace;
+  font-weight: bold;
+}
+.section-layout {
+  width: 100%;
+  margin: 3% 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
