@@ -130,16 +130,12 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
 body {
-  height: 100%;
-}
-body {
+  margin: 2%;
   border-top: 20px solid #FDB827;
   border-left: 20px solid #FDB827;
   border-right: 20px solid #542583;
   border-bottom: 20px solid #542583;
-  margin: 2%;
 }
 header {
   font-size: 150%;
@@ -152,6 +148,7 @@ header {
 header .nav-bar {
   width: 50%;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
 }
 header .nav-bar a {
@@ -165,10 +162,74 @@ header .nav-bar a:hover {
   font-family: FreeMono, monospace;
   font-weight: bold;
 }
+.content-font {
+  font-style: italic;
+}
 .section-layout {
   width: 100%;
-  margin: 3% 0;
+  margin: 3% 0px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+}
+.section {
+  width: 100%;
+  margin: 3% 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.section .title-img {
+  height: 300px;
+  width: 40%;
+  margin-right: 5%;
+}
+.section .intro-box {
+  border-radius: 20px;
+  padding: 2%;
+  background: #DCC3E0;
+  width: 40%;
+}
+.section .intro-box h1 {
+  font-family: FreeMono, monospace;
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 5%;
+}
+.section .intro-box p {
+  font-style: italic;
+  font-size: 25px;
+  padding-top: 5%;
+  margin-top: 5%;
+  text-align: center;
+}
+.section .content-box {
+  border-radius: 20px;
+  width: 40%;
+  padding: 2%;
+}
+.section .content-box h2 {
+  font-size: 2rem;
+  font-weight: 2rem;
+  margin-bottom: 1%;
+}
+.section .skills-box {
+  border: 4px solid #542583;
+}
+.section .skills-box h2 {
+  color: #FDB827;
+}
+.section .skills-box ul li {
+  font-size: 20px;
+  font-style: italic;
+}
+.section .exp-box {
+  border: 4px solid #FDB827;
+}
+.section .exp-box h2 {
+  color: #542583;
+}
+.section .exp-box ul li {
+  font-size: 20px;
+  font-style: italic;
 }
