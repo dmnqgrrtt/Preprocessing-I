@@ -67,7 +67,9 @@ body {
 	border-right: 20px solid @teamColor2;
 	border-bottom: 20px solid @teamColor2;
 
-	
+	@media (max-width: 500px) {
+		padding: 3%;
+	}
 }
 
 header {
@@ -78,11 +80,25 @@ header {
 	justify-content: flex-end;
 	margin-top: 3%;
 
+	@media (max-width: 500px) {
+		height: 15rem;
+		
+	}
+	
+
 	.nav-bar {
 		width: 50%;
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: space-evenly;
+		justify-content: space-around;
+
+		@media (max-width: 500px) {
+			display: flex;
+			flex-flow: column nowrap;
+			width: 100%;
+			text-align: center;
+		
+		}
 			
 		a {
 			text-decoration: none;
@@ -110,7 +126,15 @@ header {
 	margin: 3% 0px;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
+
+	@media (max-width: 500px) {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		height: 25rem;
+		
+	}
 
 	
 }
@@ -119,19 +143,28 @@ header {
 
 .section {
 	.section-layout();
+	
+	
+	}
 		
 	.title-img {
 		height: 300px;
 		width: 40%;
 		margin-right: 5%;
+
+		@media (max-width: 500px) {
+			display: none;
+		}
 	}
 
 	.intro-box {
 		border-radius: 20px;
 		padding: 2%;
 		background: #DCC3E0;
+
+	
 		
-		width: 40%;
+
 		h1 {
 			.title-font();
 			font-size: 4rem;
@@ -152,6 +185,10 @@ header {
 		width: 40%;
 		padding: 2%;
 
+		@media (max-width: 500px) {
+			width:100%;
+		}
+
 		h2 {
 			
 			font-size: 2rem;
@@ -162,8 +199,8 @@ header {
 
 	.skills-box {
 		border: 4px solid @teamColor2;
+		
 	
-
 		h2{
 			
 			color: @teamColor1;
@@ -199,5 +236,18 @@ header {
 			
 		} // list
 	} // skills box
-}
 
+
+
+
+footer {
+	background: #DCC3E0;
+	margin-top: 10%;
+	padding: 1%;
+	text-align: center;
+
+	h2 {
+		font-size: 2rem;
+		margin: 1% 0;
+	}
+}
